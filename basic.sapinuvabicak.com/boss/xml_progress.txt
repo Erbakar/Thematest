@@ -1,0 +1,30 @@
+=== XML İŞLEME BAŞLADI (YÜKLEME MODU) ===
+Başlangıç Zamanı: 2025-09-21 23:50:37
+Toplam Ürün Sayısı: 
+Memory Limit: 512MB
+Batch Size: 100
+İşlem Modu: Yeni Yükleme
+========================
+[2025-09-21 23:52:44] Progress: 42.55% - İşlenen: 100/235 - Başarılı: 100 - Eş Zamanlı: 439/440 (99.8%) - Memory: 26MB - Geçen: 00:02:06 - Kalan: 00:02:50
+[2025-09-21 23:54:51] Progress: 85.11% - İşlenen: 200/235 - Başarılı: 200 - Eş Zamanlı: 869/874 (99.4%) - Memory: 28MB - Geçen: 00:04:13 - Kalan: 00:00:44
+=== XML İŞLEME TAMAMLANDI (YÜKLEME MODU) ===
+Bitiş Zamanı: 2025-09-21 23:55:42
+Toplam Süre: 00:05:04
+Toplam İşlenen: 236/235
+Başarılı Ürün: 235
+Başarı Oranı: 100%
+Ortalama Hız: 46.33 ürün/dakika
+Eş Zamanlı İndirme: 1036/1041 resim
+Eş Zamanlı Başarı Oranı: 99.52%
+Final Memory: 30MB
+
+=== TRAFİK VE DİSK KULLANIMI ===
+XML Dosya Boyutu: 561.8 KB
+İndirilen Resim Sayısı: 1036
+Toplam Resim Boyutu: 108.89 MB
+Ortalama Resim Boyutu: 107.63 KB
+Toplam Trafik (XML + Resimler): 109.44 MB
+Disk Kullanımı: 108.89 MB
+Trafik/Ürün Oranı: 476.89 KB (ortalama)
+===============================
+============================

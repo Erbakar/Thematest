@@ -1,0 +1,168 @@
+[06-Nov-2025 01:35:23 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-30,15' at line 1 in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kampanyalar.php:36
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kampanyalar.php(36): PDO->query('select * from k...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(68): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kampanyalar.php on line 36
+[06-Nov-2025 19:13:41 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2c7b-5a.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php:125
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php(125): PDO->query('select * from k...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(184): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php on line 125
+[06-Nov-2025 19:13:41 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2c78-4d.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:13:41 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2c7d-4f.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:13:41 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2c79-57.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php:125
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php(125): PDO->query('select * from k...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(184): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php on line 125
+[06-Nov-2025 19:13:41 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2c7a-35.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:13:41 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2c7c-83.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:13:42 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2c7f-103.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:13:42 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2c7e-54.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:13:42 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2c80-1a.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:13:42 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2c82-3f.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:15:30 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2c9e-4d.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:15:35 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2ca0-4c.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:15:40 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2ca2-57.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php:125
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php(125): PDO->query('select * from k...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(184): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php on line 125
+[06-Nov-2025 19:15:50 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2ca6-50.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php:125
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php(125): PDO->query('select * from k...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(184): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php on line 125
+[06-Nov-2025 19:15:55 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2ca8-36.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:16:00 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2caa-104.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:16:05 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2cad-52.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:16:10 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2caf-45.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php:125
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php(125): PDO->query('select * from k...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(184): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php on line 125
+[06-Nov-2025 19:16:15 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2cb4-44.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:17:06 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2cc3-56.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:17:11 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2cc7-6d.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:17:16 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2cca-4e.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:19:10 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2cee-66.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php:125
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php(125): PDO->query('select * from k...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(184): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php on line 125
+[06-Nov-2025 19:20:10 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2cfc-50.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php:125
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php(125): PDO->query('select * from k...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(184): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/temafooter.php on line 125
+[06-Nov-2025 19:20:53 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2d05-54.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:20:58 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2d08-197.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294
+[06-Nov-2025 19:21:03 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 Can't create/write to file '/tmp/#sql-temptable-875-2d09-1e.MAI' (Errcode: 30 "Read-only file system") in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php:294
+Stack trace:
+#0 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php(294): PDO->query('select adi,id f...')
+#1 /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/index.php(120): require_once('/home/sapinuvab...')
+#2 {main}
+  thrown in /home/sapinuvabicak/public_html/soft.sapinuvabicak.com/soft/kategoridetay.php on line 294

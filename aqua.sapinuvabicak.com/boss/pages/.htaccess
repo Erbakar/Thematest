@@ -1,0 +1,15 @@
+RewriteEngine on
+RewriteRule ^index(\.html)$ index.html [L,QSA]
+RewriteRule ^index(\.php)$ index.html [L,QSA]
+
+# PHP dosyalarını engelle ama diğer dosyalara izin ver
+<FilesMatch "\.(php|php3)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# JavaScript, CSS ve diğer static dosyalara izin ver
+<FilesMatch "\.(js|css|json|txt|xml|html|htm|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>

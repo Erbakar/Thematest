@@ -1,0 +1,67 @@
+/* Ürün resim boyutları - 16:9 oranında maksimum 1440x810 */
+.product-main-image img {
+    max-width: 100%;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Zoom resimleri için maksimum boyut */
+.product-zoom-cover {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+/* Galeri thumbnail'leri */
+.product-image-gallery img {
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Varyant resimleri */
+.product-nav-thumbs img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Benzer ürün resimleri */
+.product-media img {
+    width: 230px !important;
+    height: 245px !important;
+    object-fit: cover;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    .product-main-image img {
+        max-height: 300px;
+    }
+    
+    .product-image-gallery img {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    
+    .product-nav-thumbs img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .product-media img {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}
+
+/* Zoom özelliği için */
+.product-zoom-cover img {
+    max-width: 1440px;
+    max-height: 810px;
+    width: auto;
+    height: auto;
+}

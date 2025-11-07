@@ -1,0 +1,23 @@
+RewriteEngine on
+RewriteRule ^index(\.html)$ index.html [L,QSA]
+RewriteRule ^index(\.php)$ index.html [L,QSA]
+
+# İzin verilen belirli PHP dosyaları (önce izinler, sonra yasaklar)
+<Files "xml_process_backend.php">
+    Require all granted
+</Files>
+
+<Files "ajax_siparis_kontrol.php">
+    Require all granted
+</Files>
+
+# Tüm PHP dosyalarını engelle (yukarıdaki istisnalar hariç)
+<FilesMatch "^(?!xml_process_backend\.php$|ajax_siparis_kontrol\.php$).*\.(php|php3)$">
+    Require all denied
+</FilesMatch>
+
+# JavaScript, CSS ve diğer static dosyalara izin ver
+<FilesMatch "\.(js|css|json|txt|xml|html|htm|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>

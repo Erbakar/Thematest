@@ -1,0 +1,94 @@
+[28-Oct-2025 13:11:05 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 12
+[28-Oct-2025 13:11:05 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 162
+[28-Oct-2025 13:11:05 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 176
+[28-Oct-2025 13:11:05 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 211
+[28-Oct-2025 13:11:05 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 220
+[28-Oct-2025 13:11:05 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 225
+[28-Oct-2025 13:11:05 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 235
+[28-Oct-2025 13:11:05 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 243
+[28-Oct-2025 13:11:05 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 253
+[28-Oct-2025 13:11:05 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 259
+[28-Oct-2025 13:11:05 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 295
+[28-Oct-2025 13:11:13 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 12
+[28-Oct-2025 13:11:13 Europe/Istanbul] Kupon ekleme hatası: SQLSTATE[HY000]: General error: 1364 Field 'epostalar' doesn't have a default value
+[28-Oct-2025 13:11:13 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 162
+[28-Oct-2025 13:11:13 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 176
+[28-Oct-2025 13:11:13 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 211
+[28-Oct-2025 13:11:13 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 220
+[28-Oct-2025 13:11:13 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 225
+[28-Oct-2025 13:11:13 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 235
+[28-Oct-2025 13:11:13 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 243
+[28-Oct-2025 13:11:13 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 253
+[28-Oct-2025 13:11:13 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 259
+[28-Oct-2025 13:11:13 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 295
+[28-Oct-2025 13:14:14 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 12
+[28-Oct-2025 13:14:14 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 165
+[28-Oct-2025 13:14:14 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 179
+[28-Oct-2025 13:14:14 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 214
+[28-Oct-2025 13:14:14 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 223
+[28-Oct-2025 13:14:14 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 228
+[28-Oct-2025 13:14:14 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 238
+[28-Oct-2025 13:14:14 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 246
+[28-Oct-2025 13:14:14 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 256
+[28-Oct-2025 13:14:14 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 262
+[28-Oct-2025 13:14:14 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 298
+[28-Oct-2025 13:14:32 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 12
+[28-Oct-2025 13:14:32 Europe/Istanbul] Kupon ekleme hatası: SQLSTATE[HY000]: General error: 1364 Field 'gelenkim' doesn't have a default value
+[28-Oct-2025 13:14:32 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 165
+[28-Oct-2025 13:14:32 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 179
+[28-Oct-2025 13:14:32 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 214
+[28-Oct-2025 13:14:32 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 223
+[28-Oct-2025 13:14:32 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 228
+[28-Oct-2025 13:14:32 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 238
+[28-Oct-2025 13:14:32 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 246
+[28-Oct-2025 13:14:32 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 256
+[28-Oct-2025 13:14:32 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 262
+[28-Oct-2025 13:14:32 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 298
+[28-Oct-2025 13:15:26 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 12
+[28-Oct-2025 13:15:26 Europe/Istanbul] Kupon ekleme hatası: SQLSTATE[HY000]: General error: 1364 Field 'kullanildi' doesn't have a default value
+[28-Oct-2025 13:15:26 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 165
+[28-Oct-2025 13:15:26 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 179
+[28-Oct-2025 13:15:26 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 214
+[28-Oct-2025 13:15:26 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 223
+[28-Oct-2025 13:15:26 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 228
+[28-Oct-2025 13:15:26 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 238
+[28-Oct-2025 13:15:26 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 246
+[28-Oct-2025 13:15:26 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 256
+[28-Oct-2025 13:15:26 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 262
+[28-Oct-2025 13:15:26 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 298
+[28-Oct-2025 13:33:29 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 12
+[28-Oct-2025 13:33:29 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 165
+[28-Oct-2025 13:33:29 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 179
+[28-Oct-2025 13:33:29 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 214
+[28-Oct-2025 13:33:29 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 223
+[28-Oct-2025 13:33:29 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 228
+[28-Oct-2025 13:33:29 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 238
+[28-Oct-2025 13:33:29 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 246
+[28-Oct-2025 13:33:29 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 256
+[28-Oct-2025 13:33:29 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 262
+[28-Oct-2025 13:33:29 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 298
+[28-Oct-2025 13:33:36 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 12
+[28-Oct-2025 13:33:36 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 165
+[28-Oct-2025 13:33:36 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 179
+[28-Oct-2025 13:33:36 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 214
+[28-Oct-2025 13:33:36 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 223
+[28-Oct-2025 13:33:36 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 228
+[28-Oct-2025 13:33:36 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 238
+[28-Oct-2025 13:33:36 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 246
+[28-Oct-2025 13:33:36 Europe/Istanbul] PHP Notice:  Undefined variable: sayfam in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 256
+[28-Oct-2025 13:33:36 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 262
+[28-Oct-2025 13:33:36 Europe/Istanbul] PHP Notice:  Undefined index: duzenle in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/boss/pages/kuponekle.php on line 298
+[29-Oct-2025 11:39:16 Europe/Istanbul] PHP Notice:  session_start(): A session had already been started - ignoring in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/db.php on line 4
+[29-Oct-2025 11:39:16 Europe/Istanbul] PHP Notice:  Constant DB_DRIVER already defined in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/db.php on line 10
+[29-Oct-2025 11:39:16 Europe/Istanbul] PHP Notice:  Constant DB_SERVER already defined in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/db.php on line 11
+[29-Oct-2025 11:39:16 Europe/Istanbul] PHP Notice:  Constant DB_SERVER_USERNAME already defined in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/db.php on line 12
+[29-Oct-2025 11:39:16 Europe/Istanbul] PHP Notice:  Constant DB_SERVER_PASSWORD already defined in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/db.php on line 13
+[29-Oct-2025 11:39:16 Europe/Istanbul] PHP Notice:  Constant DB_DATABASE already defined in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/db.php on line 14
+[29-Oct-2025 11:39:16 Europe/Istanbul] PHP Fatal error:  Cannot redeclare urunfiyatbelirle() (previously declared in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/fonksiyon.php:762) in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/fonksiyon.php on line 762
+[29-Oct-2025 11:47:59 Europe/Istanbul] PHP Notice:  session_start(): A session had already been started - ignoring in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/db.php on line 4
+[29-Oct-2025 11:47:59 Europe/Istanbul] PHP Notice:  Constant DB_DRIVER already defined in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/db.php on line 10
+[29-Oct-2025 11:47:59 Europe/Istanbul] PHP Notice:  Constant DB_SERVER already defined in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/db.php on line 11
+[29-Oct-2025 11:47:59 Europe/Istanbul] PHP Notice:  Constant DB_SERVER_USERNAME already defined in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/db.php on line 12
+[29-Oct-2025 11:47:59 Europe/Istanbul] PHP Notice:  Constant DB_SERVER_PASSWORD already defined in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/db.php on line 13
+[29-Oct-2025 11:47:59 Europe/Istanbul] PHP Notice:  Constant DB_DATABASE already defined in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/db.php on line 14
+[29-Oct-2025 11:47:59 Europe/Istanbul] PHP Fatal error:  Cannot redeclare urunfiyatbelirle() (previously declared in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/fonksiyon.php:762) in /home/sapinuvabicak/public_html/plus.sapinuvabicak.com/func/fonksiyon.php on line 762

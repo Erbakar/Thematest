@@ -1,0 +1,5 @@
+WebP desteği aktif. Resimler WebP formatında kaydedilecek.
+Ürün 100 işleniyor... Memory: 26MB
+Ürün 200 işleniyor... Memory: 26MB
+Döngü tamamlandı. Toplam işlenen: 236
+Trafik verisi kaydedildi: XML Yükleme (ID: 1) - Ürün: 235, Resim: 1036 - XML: 0.55MB, Resim: 108.89MB - 109.44 MB - 2025-09-21

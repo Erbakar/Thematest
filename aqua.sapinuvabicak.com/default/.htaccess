@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteRule ^index(\.html)$ index.html [L,QSA]
+RewriteRule ^index(\.php)$ index.html [L,QSA]
+
+<Files ~ ".(xml|php|asp|aspx)$">
+order deny,allow
+deny from all
+</Files>
+
+<files captcha.php>
+order allow,deny
+allow from all
+</files>

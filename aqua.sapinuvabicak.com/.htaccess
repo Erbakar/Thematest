@@ -1,0 +1,94 @@
+RewriteEngine on
+ErrorDocument 404 /404.html
+RewriteRule ^404(\.html)$ index.php?trendmaxtrs=404 [L,QSA]
+RewriteRule ^index(\.html)$ index.php [L,QSA]
+RewriteRule ^index$ index.php [L,QSA]
+RewriteRule ^anasayfa$ index.php [L,QSA]
+RewriteRule ^siparissorgulama/(.*)$ index.php?trendmaxtrs=siparissorgulama [L,QSA]
+RewriteRule ^bankabilgilerimiz/(.*)$ index.php?trendmaxtrs=bankabilgilerimiz [L,QSA]
+RewriteRule ^hesabim/(.*)$ index.php?trendmaxtrs=hesabim [L,QSA]
+RewriteRule ^urunkarsilastirma/(.*)$ index.php?trendmaxtrs=urunkarsilastirma [L,QSA]
+RewriteRule ^favorilerim/(.*)$ index.php?trendmaxtrs=favorilerim [L,QSA]
+RewriteRule ^sepet/?$ index.php?trendmaxtrs=sepet [L,QSA]
+RewriteRule ^sepet/(.*)$ index.php?trendmaxtrs=sepet [L,QSA]
+RewriteRule ^kampanyalar/(.*)$ index.php?trendmaxtrs=kampanyalar [L,QSA]
+RewriteRule ^bloglar/(.*)$ index.php?trendmaxtrs=bloglar [L,QSA]
+RewriteRule ^iletisim/(.*)$ index.php?trendmaxtrs=iletisim [L,QSA]
+RewriteRule ^gununfirsati/(.*)$ index.php?trendmaxtrs=gununfirsati [L,QSA]
+RewriteRule ^sizinicin/(.*)$ index.php?trendmaxtrs=sizinicin [L,QSA]
+RewriteRule ^sayfa/(.*)$ index.php?trendmaxtrs=sayfa&id=$1 [L,QSA]
+RewriteRule ^kategori/(.*)$ index.php?trendmaxtrs=kategori&id=$1 [L,QSA]
+RewriteRule ^urun/(.*)$ index.php?trendmaxtrs=urun&id=$1 [L,QSA]
+RewriteRule ^kampanya/(.*)$ index.php?trendmaxtrs=kampanya&id=$1 [L,QSA]
+RewriteRule ^blog/(.*)$ index.php?trendmaxtrs=blog&id=$1 [L,QSA]
+RewriteRule ^rizametni/(.*)$ index.php?trendmaxtrs=rizametni [L,QSA]
+RewriteRule ^sifremiunuttum/(.*)$ index.php?trendmaxtrs=sifremiunuttum [L,QSA]
+RewriteRule ^sss/(.*)$ index.php?trendmaxtrs=sss&id=$1 [L,QSA]
+RewriteRule ^kullanim-kosullari/(.*)$ index.php?trendmaxtrs=kullanimkosullari [L,QSA]
+RewriteRule ^onay(.*)$ index.php?trendmaxtrs=onay [L,QSA]
+RewriteRule ^odeme/(.*)$ index.php?trendmaxtrs=odeme [L,QSA]
+RewriteRule ^kontrol/(.*)$ index.php?trendmaxtrs=kontrol [L,QSA]
+RewriteRule ^mesafeli-satis-sozlesmesi/(.*)$ index.php?trendmaxtrs=mesafeli-satis-sozlesmesi [L,QSA]
+RewriteRule ^alisverisi-tamamla/(.*)$ index.php?trendmaxtrs=alisverisi-tamamla [L,QSA]
+RewriteRule ^hesabim/(.*)$ index.php?trendmaxtrs=hesabim [L,QSA]
+RewriteRule ^arama/(.*)$ index.php?trendmaxtrs=arama [L,QSA]
+RewriteRule ^uyeol/(.*)$ index.php?trendmaxtrs=uyeol [L,QSA]
+RewriteRule ^cikis/(.*)$ index.php?trendmaxtrs=cikis [L,QSA]
+RewriteRule ^urunler.xml$ urunlerxml.php
+RewriteRule ^akakce.xml$ akakcexml.php
+RewriteRule ^cimri.xml$ cimrixml.php
+RewriteRule ^rss.xml$ rss.php
+RewriteRule ^sitemap.xml$ sitemap.php
+RewriteRule ^merchant.xml$ merchant.php
+RewriteRule ^paytrsonuc.php$ index.php?trendmaxtrs=paytrsonuc [L,QSA]
+RewriteRule ^iyzicosonuc.php$ index.php?trendmaxtrs=iyzicosonuc [L,QSA]
+RewriteRule ^shopiersonuc.php$ index.php?trendmaxtrs=shopiersonuc [L,QSA]
+ 
+
+
+
+
+
+<files temaayarlari.php>
+order allow,deny
+deny from all
+</files>
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php7_module>
+   php_value allow_url_fopen On
+   php_flag display_errors Off
+   php_value max_execution_time 900
+   php_value max_input_time -1
+   php_value max_input_vars 1000
+   php_value memory_limit 128M
+   php_value post_max_size 256M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/opt/alt/php72/var/lib/php/session"
+   php_value upload_max_filesize 256M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_value allow_url_fopen On
+   php_flag display_errors Off
+   php_value max_execution_time 900
+   php_value max_input_time -1
+   php_value max_input_vars 1000
+   php_value memory_limit 128M
+   php_value post_max_size 256M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/opt/alt/php72/var/lib/php/session"
+   php_value upload_max_filesize 256M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php72” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

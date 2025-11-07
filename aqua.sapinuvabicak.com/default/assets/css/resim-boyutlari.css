@@ -1,0 +1,144 @@
+/* Ürün resim boyutları - Responsive ve optimize edilmiş */
+.product-main-image img {
+    max-width: 100%;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    /* Performans optimizasyonları */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+/* Zoom resimleri için maksimum boyut */
+.product-zoom-cover {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+/* Galeri thumbnail'leri - Responsive */
+.product-image-gallery img {
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: cover;
+    border-radius: 4px;
+    /* Performans optimizasyonları */
+    image-rendering: -webkit-optimize-contrast;
+    backface-visibility: hidden;
+}
+
+/* Varyant resimleri - Responsive */
+.product-nav-thumbs img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover;
+    border-radius: 4px;
+    /* Performans optimizasyonları */
+    image-rendering: -webkit-optimize-contrast;
+    backface-visibility: hidden;
+}
+
+/* Benzer ürün resimleri - Responsive */
+.product-media img {
+    width: 230px !important;
+    height: 245px !important;
+    object-fit: cover;
+    /* Performans optimizasyonları */
+    image-rendering: -webkit-optimize-contrast;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+/* Responsive tasarım - Mobil optimizasyonları */
+@media (max-width: 768px) {
+    .product-main-image img {
+        max-height: 300px;
+        /* Mobilde daha küçük boyutlar */
+        max-width: 100vw;
+    }
+    
+    .product-image-gallery img {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    
+    .product-nav-thumbs img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .product-media img {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}
+
+/* Tablet optimizasyonları */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .product-main-image img {
+        max-height: 400px;
+    }
+    
+    .product-media img {
+        width: 220px !important;
+        height: 235px !important;
+    }
+}
+
+/* Zoom özelliği için - Responsive */
+.product-zoom-cover img {
+    max-width: 1440px;
+    max-height: 810px;
+    width: auto;
+    height: auto;
+    /* Zoom performansı için */
+    image-rendering: -webkit-optimize-contrast;
+    backface-visibility: hidden;
+}
+
+/* Lazy loading optimizasyonları */
+.lazyload {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.lazyloaded {
+    opacity: 1;
+}
+
+/* Resim yükleme durumu için placeholder */
+.lazyloading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* WebP desteği için fallback */
+.no-webp .product-main-image img,
+.no-webp .product-image-gallery img,
+.no-webp .product-nav-thumbs img,
+.no-webp .product-media img {
+    /* Fallback stilleri */
+}
+
+/* Yüksek DPI ekranlar için optimizasyon */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .product-main-image img,
+    .product-image-gallery img,
+    .product-nav-thumbs img,
+    .product-media img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
