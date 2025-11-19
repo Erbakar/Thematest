@@ -66,7 +66,6 @@ header("Location: ".$url."");
   white-space: nowrap;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
   box-shadow: none !important;
 }
 
@@ -99,126 +98,396 @@ section.slider .thumbslider .slick-slide span {
   display: none !important;
 }
 
-/* Navbar kategori taşması için çözüm */
-nav.navbar {
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
+
+:root {
+  --trendy-accent: #f27a1a;
+  --trendy-accent-dark: #d96506;
+  --trendy-text: #111422;
+  --trendy-muted: #5b6370;
+  --trendy-border: #eceff5;
+  --trendy-soft: #f9fafb;
+  --trendy-shadow: 0 20px 60px rgba(17, 20, 34, 0.12);
 }
 
-nav.navbar::-webkit-scrollbar {
-  height: 6px;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-nav.navbar::-webkit-scrollbar-track {
-  background: #f5f5f5;
-  border-radius: 3px;
+body.trendy-nav-open {
+  overflow: hidden;
 }
 
-nav.navbar::-webkit-scrollbar-thumb {
-  background: #3fbafe;
-  border-radius: 3px;
+.trendy-nav {
+  background: #fff;
+  border-top: 1px solid var(--trendy-border);
+  border-bottom: 1px solid var(--trendy-border);
+  box-shadow: var(--trendy-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
 }
 
-nav.navbar::-webkit-scrollbar-thumb:hover {
-  background: #2ea8e8;
+.trendy-nav__container {
+  padding: 0;
 }
 
-/* Firefox için scrollbar */
-nav.navbar {
-  scrollbar-width: thin;
-  scrollbar-color: #3fbafe #f5f5f5;
+.trendy-nav__inner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 74px;
 }
 
-nav.navbar .container-lg {
-  overflow-x: visible !important;
-  overflow-y: visible !important;
+.trendy-nav__toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid var(--trendy-border);
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: #fff;
+  color: var(--trendy-text);
+  font-weight: 600;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-nav.navbar .navbar-collapse {
-  overflow-x: auto !important;
-  overflow-y: visible !important;
+.trendy-nav__toggle-line {
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 99px;
+  transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
+}
+
+.trendy-nav__toggle-line:nth-of-type(2) {
+  width: 12px;
+}
+
+.trendy-nav__toggle-line:nth-of-type(3) {
+  width: 18px;
+}
+
+.trendy-nav__toggle.is-active .trendy-nav__toggle-line:nth-of-type(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.trendy-nav__toggle.is-active .trendy-nav__toggle-line:nth-of-type(2) {
+  opacity: 0;
+}
+
+.trendy-nav__toggle.is-active .trendy-nav__toggle-line:nth-of-type(3) {
+  transform: translateY(-4px) rotate(-45deg);
+  width: 22px;
+}
+
+.trendy-nav__content {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.trendy-nav__categories {
+  position: relative;
+  min-width: 220px;
+}
+
+.trendy-nav__all-btn {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: none;
+  border-radius: 18px;
+  padding: 14px 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: linear-gradient(135deg, #ffb347, var(--trendy-accent));
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(242, 122, 26, 0.35);
 }
 
-nav.navbar .navbar-collapse::-webkit-scrollbar {
-  height: 6px;
+.trendy-nav__all-btn .icon-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-nav.navbar .navbar-collapse::-webkit-scrollbar-track {
-  background: #f5f5f5;
-  border-radius: 3px;
+.trendy-nav__all-btn i {
+  font-size: 22px;
 }
 
-nav.navbar .navbar-collapse::-webkit-scrollbar-thumb {
-  background: #3fbafe;
-  border-radius: 3px;
+.trendy-nav__drawer {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 0;
+  width: min(1100px, calc(100vw - 40px));
+  max-height: 640px;
+  background: #fff;
+  border-radius: 24px;
+  border: 1px solid var(--trendy-border);
+  box-shadow: 0 40px 80px rgba(17, 20, 34, 0.18);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 1000;
 }
 
-nav.navbar .navbar-collapse::-webkit-scrollbar-thumb:hover {
-  background: #2ea8e8;
+.trendy-nav__drawer.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
-nav.navbar .navbar-collapse {
-  scrollbar-width: thin;
-  scrollbar-color: #3fbafe #f5f5f5;
+.trendy-nav__drawer-inner {
+  display: flex;
+  min-height: 340px;
 }
 
-nav.navbar ul.navbar-nav {
-  flex-wrap: nowrap !important;
-  min-width: max-content !important;
-  width: auto !important;
+.trendy-nav__primary {
+  width: 260px;
+  background: var(--trendy-soft);
+  border-right: 1px solid var(--trendy-border);
+  overflow-y: auto;
 }
 
-nav.navbar ul.navbar-nav li {
-  flex-grow: 0 !important;
-  flex-shrink: 0 !important;
-  width: auto !important;
-  min-width: max-content;
+.trendy-nav__primary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  gap: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  border-left: 3px solid transparent;
 }
 
-/* Dropdown menülerin slider üstünde görünmesi için z-index */
-nav.navbar {
-  z-index: 1030 !important;
-  position: relative !important;
+.trendy-nav__primary-item.is-active {
+  background: #fff;
+  border-left-color: var(--trendy-accent);
+  box-shadow: inset -8px 0 20px rgba(0,0,0,0.03);
 }
 
-nav.navbar .container-lg {
-  z-index: 1030 !important;
-  position: relative !important;
+.trendy-nav__primary-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--trendy-text);
+  text-decoration: none;
+  font-weight: 600;
 }
 
-nav.navbar .navbar-collapse {
-  z-index: 1030 !important;
-  position: relative !important;
+.trendy-nav__primary-link img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
-nav.navbar ul.navbar-nav {
-  z-index: 1030 !important;
-  position: relative !important;
+.trendy-nav__primary-toggle {
+  border: none;
+  background: transparent;
+  color: var(--trendy-muted);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-nav.navbar ul.navbar-nav li {
-  position: relative !important;
-  z-index: 1030 !important;
+.trendy-nav__details {
+  flex: 1;
+  padding: 28px 32px;
+  overflow-y: auto;
 }
 
-nav.navbar ul.navbar-nav li .dropdown-menu {
-  z-index: 9999 !important;
-  position: absolute !important;
-  top: 100% !important;
-  left: 0 !important;
-  right: 0 !important;
+.trendy-nav__detail {
+  display: none;
 }
 
-nav.navbar ul.navbar-nav li .dropdown-menu.show {
-  display: block !important;
+.trendy-nav__detail.is-active {
+  display: block;
 }
 
-nav.navbar ul.navbar-nav li.dropdown:hover .dropdown-menu,
-nav.navbar ul.navbar-nav li.dropdown.show .dropdown-menu {
-  display: block !important;
+.trendy-nav__detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 28px;
+}
+
+.trendy-nav__detail-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trendy-nav__detail-title {
+  font-weight: 600;
+  color: var(--trendy-text);
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--trendy-border);
+}
+
+.trendy-nav__detail-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.trendy-nav__detail-links a {
+  color: var(--trendy-muted);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.trendy-nav__detail-links a:hover {
+  color: var(--trendy-accent);
+  padding-left: 6px;
+}
+
+.trendy-nav__detail-empty {
+  padding: 24px;
+  border: 1px dashed var(--trendy-border);
+  border-radius: 18px;
+  background: var(--trendy-soft);
+  color: var(--trendy-muted);
+  font-weight: 500;
+}
+
+.trendy-nav__shortcuts {
+  flex: 1;
+  border: 1px solid var(--trendy-border);
+  border-radius: 20px;
+  padding: 8px 12px;
+  background: var(--trendy-soft);
+  overflow: hidden;
+}
+
+.trendy-nav__shortcuts-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding:8px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.trendy-nav__shortcuts-list::-webkit-scrollbar {
+  display: none;
+}
+
+.trendy-nav__shortcut-link {
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  color: var(--trendy-text);
+  background: #fff;
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.trendy-nav__shortcut-link:hover,
+.trendy-nav__shortcut-link:focus {
+  color: var(--trendy-accent);
+  border-color: var(--trendy-accent);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1199px) {
+  .trendy-nav__inner {
+    flex-direction: column;
+    padding: 16px 0;
+  }
+  
+  .trendy-nav__toggle {
+    display: none;
+  }
+  
+  .trendy-nav__content {
+    flex-direction: column;
+    width: 96%;
+    max-height: none;
+    overflow: visible;
+    border-top: 1px solid var(--trendy-border);
+    padding-top: 16px;
+  }
+  
+  .trendy-nav__content.is-open {
+    max-height: none;
+    overflow-y: visible;
+  }
+  
+  .trendy-nav__categories {
+    min-width: 100%;
+  }
+  
+  .trendy-nav__drawer {
+    position: static;
+    width: 100%;
+    max-height: none;
+    box-shadow: none;
+    border-radius: 18px;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin-top: 12px;
+    display: none;
+  }
+  
+  .trendy-nav__drawer.is-open {
+    display: block;
+  }
+  
+  .trendy-nav__drawer-inner {
+    flex-direction: column;
+  }
+  
+  .trendy-nav__primary {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--trendy-border);
+  }
+  
+  .trendy-nav__primary-item {
+    border-left: none;
+    border-bottom: 1px solid var(--trendy-border);
+  }
+  
+  .trendy-nav__primary-item.is-active {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .trendy-nav__shortcuts {
+    padding: 6px 8px;
+  }
+  
+  .trendy-nav__shortcut-link {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
 }
 
 /* Slider section'ın z-index'ini düşür */
@@ -384,91 +653,267 @@ $metadesc ="".$pagex['adi']."  Sadece ".$yenifiyatx." ".$kargommmmmmmmmmmmmmmmmm
         </div>
     </div>
 </header>
-<nav class="navbar navbar-expand-xl navbar-light d-xl-flex d-none sticky-top">
-    <div class="container-lg">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-flex align-items-center justify-content-between" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-			
-			<?php $ustkattt = $ozy->query("select * from kategoriler where durum='1' and ustkat='0' order by sira desc")->fetchAll(PDO::FETCH_ASSOC); 
-            foreach($ustkattt as $katadi){?>
-
-            <?php if($katadi['ac']=='1'){?>	
-			
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="kategori/<?php echo $katadi['seo']; ?>" role="button" id="kategoriToggle<?php echo $katadi['id']; ?>" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span>
-                            <?php if($katadi['nikon'] === null or $katadi['nikon'] === '' or $katadi['nikon'] === '1' or $katadi['nikon'] === '0'){?>
-						    <?php } else { ?>	
-                            <img style="height: 28px;width: 32px;margin-right: 5px;" src="resimler/kategoriler/<?php echo $katadi['nikon']; ?>"></img>
-                            <?php } ?>	
-							
-							<?php echo $katadi['adi']; ?>
+<nav class="trendy-nav sticky-top" id="siteNav" data-trendy-nav>
+    <div class="container-lg trendy-nav__container">
+        <div class="trendy-nav__inner">
+			<?php 
+			$ustkattt = $ozy->query("select * from kategoriler where durum='1' and ustkat='0' order by sira desc")->fetchAll(PDO::FETCH_ASSOC); 
+			// Varsayılan olarak 3 göster, 6 ve üstü ise 6 göster
+			$shortcutLimit = 3;
+			if (isset($_SERVER['HTTP_USER_AGENT'])) {
+				// Masaüstü tarayıcılar için kaba bir kontrol
+				if (!preg_match('/Mobile|Android|iP(hone|od|ad)|IEMobile|BlackBerry|Opera Mini/i', $_SERVER['HTTP_USER_AGENT'])) {
+					$shortcutLimit = 6;
+				}
+			}
+			$shortcutItems = array_slice($ustkattt, 0, $shortcutLimit);
+			?>
+            <button class="trendy-nav__toggle" type="button" aria-expanded="false" aria-controls="trendyNavContent" data-nav-toggle>
+                <span class="trendy-nav__toggle-line"></span>
+                <span class="trendy-nav__toggle-line"></span>
+                <span class="trendy-nav__toggle-line"></span>
+                <span class="sr-only">Menüyü aç/kapat</span>
+            </button>
+            <div class="trendy-nav__content" id="trendyNavContent" data-nav-content aria-hidden="true">
+                <div class="trendy-nav__categories">
+                    <button class="trendy-nav__all-btn" type="button" data-all-toggle aria-expanded="false" aria-controls="allCategoriesPanel">
+                        <span class="icon-wrap">
+                            <i class="ri-menu-line"></i>
+                            <span>TÜM KATEGORİLER</span>
                         </span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="kategoriToggle<?php echo $katadi['id']; ?>">
-                        <div class="container-lg">
-                            <div class="row">
-							
-				<?php 
-				
-				$ustkatid = $katadi['id'];
-				$ustkattta = $ozy->query("select * from kategoriler where durum='1' and ustkat='$ustkatid' order by sira desc")->fetchAll(PDO::FETCH_ASSOC); 
-                foreach($ustkattta as $katadi2){?>
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                                    <a href="kategori/<?php echo $katadi2['seo']; ?>">
-									<div class="title"><?php echo $katadi2['adi']; ?></div>
-									</a>
-                                    <div class="linkgroup">
-                                 	    <?php 
-				
-				$ustkatid2= $katadi2['id'];
-				$ustkatttaz = $ozy->query("select * from kategoriler where durum='1' and ustkat='$ustkatid2' order by sira desc")->fetchAll(PDO::FETCH_ASSOC); 
-                foreach($ustkatttaz as $katadi22){?>
-                                        <a href="kategori/<?php echo $katadi22['seo']; ?>"><?php echo $katadi22['adi']; ?></a>
-                                  	<?php } ?>  
-								  </div>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </button>
+					<?php if(!empty($ustkattt)){ ?>
+                    <div class="trendy-nav__drawer" id="allCategoriesPanel" data-all-panel aria-hidden="true">
+                        <div class="trendy-nav__drawer-inner">
+                            <div class="trendy-nav__primary">
+							<?php foreach($ustkattt as $index => $katadi){
+							$hasDropdown = $katadi['ac'] == '1';
+							$isActive = $index === 0 ? 'is-active' : '';
+							?>
+                                <div class="trendy-nav__primary-item <?php echo $isActive; ?>" data-cat="<?php echo $katadi['id']; ?>">
+                                    <a class="trendy-nav__primary-link" href="kategori/<?php echo $katadi['seo']; ?>">
+										<?php if($katadi['nikon'] && $katadi['nikon'] != '0' && $katadi['nikon'] != '1'){?>	
+										<img src="resimler/kategoriler/<?php echo $katadi['nikon']; ?>" alt="<?php echo $katadi['adi']; ?>">
+										<?php } ?>
+                                        <span><?php echo $katadi['adi']; ?></span>
+                                    </a>
+									<?php if($hasDropdown){ ?>
+                                    <button class="trendy-nav__primary-toggle" type="button" aria-label="<?php echo $katadi['adi']; ?> alt kategorileri" data-cat-toggle="<?php echo $katadi['id']; ?>">
+                                        <i class="ri-arrow-right-s-line"></i>
+                                    </button>
+									<?php } ?>
                                 </div>
-                             	<?php } ?>   
-                               
-                                
-								
-								
-								
+							<?php } ?>
+                            </div>
+                            <div class="trendy-nav__details">
+							<?php foreach($ustkattt as $index => $katadi){
+							$hasDropdown = $katadi['ac'] == '1';
+							$isDetailActive = $index === 0 ? 'is-active' : '';
+							?>
+                                <div class="trendy-nav__detail <?php echo $isDetailActive; ?>" data-cat-panel="<?php echo $katadi['id']; ?>">
+									<?php 
+									$ustkatid = $katadi['id'];
+									$ustkattta = $ozy->query("select * from kategoriler where durum='1' and ustkat='$ustkatid' order by sira desc")->fetchAll(PDO::FETCH_ASSOC); 
+									if($hasDropdown && !empty($ustkattta)){ ?>
+                                    <div class="trendy-nav__detail-grid">
+										<?php foreach($ustkattta as $katadi2){?>
+                                        <div class="trendy-nav__detail-col">
+                                            <a href="kategori/<?php echo $katadi2['seo']; ?>" class="trendy-nav__detail-title"><?php echo $katadi2['adi']; ?></a>
+											<?php 
+											$ustkatid2 = $katadi2['id'];
+											$ustkatttaz = $ozy->query("select * from kategoriler where durum='1' and ustkat='$ustkatid2' order by sira desc")->fetchAll(PDO::FETCH_ASSOC); 
+											if(!empty($ustkatttaz)){ ?>
+                                            <ul class="trendy-nav__detail-links">
+                                                <?php foreach($ustkatttaz as $katadi22){?>
+                                                <li><a href="kategori/<?php echo $katadi22['seo']; ?>"><?php echo $katadi22['adi']; ?></a></li>
+                                              	<?php } ?>  
+											</ul>
+											<?php } ?>
+                                        </div>
+										<?php } ?>
+                                    </div>
+									<?php } else { ?>
+									<div class="trendy-nav__detail-empty">
+										<?php echo $katadi['adi']; ?> kategorisindeki ürünleri keşfetmek için menüden ilerleyin.
+									</div>
+									<?php } ?>
+                                </div>
+							<?php } ?>
                             </div>
                         </div>
                     </div>
-                </li>
-				
-				
-					      <?php } else { ?>			
-														
-														
-														
-														
-                                                   
-                <li class="nav-item dropdown">
-                    <a class="nav-link " href="kategori/<?php echo $katadi['seo']; ?>">
-                        <span>
-                            <?php if($katadi['nikon'] === null or $katadi['nikon'] === '' or $katadi['nikon'] === '1' or $katadi['nikon'] === '0'){?>
-						    <?php } else { ?>	
-                            <img style="height: 28px;width: 32px;margin-right: 5px;" src="resimler/kategoriler/<?php echo $katadi['nikon']; ?>"></img>
-                            <?php } ?>	
-						   <?php echo $katadi['adi']; ?>
-                        </span>
-                    </a>
-                   
-                </li>
-				
-                                                     
-													 
-													     <?php }} ?>	
-				
-				
-            </ul>
+					<?php } ?>
+                </div>
+                <div class="trendy-nav__shortcuts">
+                    <ul class="trendy-nav__shortcuts-list">
+					<?php if(!empty($shortcutItems)){ 
+					foreach($shortcutItems as $katadi){ ?>
+                        <li>
+                            <a href="kategori/<?php echo $katadi['seo']; ?>" class="trendy-nav__shortcut-link">
+								<?php echo $katadi['adi']; ?>
+							</a>
+                        </li>
+					<?php } } else { ?>
+						<li class="trendy-nav__detail-empty" style="margin: 0;">
+							Kategoriler yakında yüklenecek.
+						</li>
+					<?php } ?>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var navRoot = document.querySelector('[data-trendy-nav]');
+    if (!navRoot) {
+        return;
+    }
+
+    var navToggle = navRoot.querySelector('[data-nav-toggle]');
+    var navContent = navRoot.querySelector('[data-nav-content]');
+    var allToggle = navRoot.querySelector('[data-all-toggle]');
+    var allPanel = navRoot.querySelector('[data-all-panel]');
+    var primaryItems = navRoot.querySelectorAll('[data-cat]');
+    var detailPanels = navRoot.querySelectorAll('[data-cat-panel]');
+    var body = document.body;
+    var mq = window.matchMedia('(min-width: 1200px)');
+
+    function isToggleInteractive() {
+        if (!navToggle) {
+            return false;
+        }
+        return window.getComputedStyle(navToggle).display !== 'none';
+    }
+
+    function setNavOpen(isOpen) {
+        if (!navContent) {
+            return;
+        }
+        navContent.classList.toggle('is-open', isOpen);
+        navContent.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        if (navToggle) {
+            navToggle.classList.toggle('is-active', isOpen);
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        }
+        body.classList.toggle('trendy-nav-open', isOpen);
+        if (!isOpen) {
+            closeAllDrawer();
+        }
+    }
+
+    function closeAllDrawer() {
+        if (allPanel) {
+            allPanel.classList.remove('is-open');
+            allPanel.setAttribute('aria-hidden', 'true');
+        }
+        if (allToggle) {
+            allToggle.setAttribute('aria-expanded', 'false');
+        }
+    }
+
+    function toggleDrawer() {
+        if (!allPanel || !allToggle) {
+            return;
+        }
+        var willOpen = !allPanel.classList.contains('is-open');
+        allPanel.classList.toggle('is-open', willOpen);
+        allPanel.setAttribute('aria-hidden', willOpen ? 'false' : 'true');
+        allToggle.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+        if (willOpen && !mq.matches) {
+            setNavOpen(true);
+        }
+    }
+
+    function setActiveCategory(catId) {
+        if (!catId) {
+            return;
+        }
+        Array.prototype.forEach.call(primaryItems, function (item) {
+            item.classList.toggle('is-active', item.getAttribute('data-cat') === catId);
+        });
+        Array.prototype.forEach.call(detailPanels, function (panel) {
+            panel.classList.toggle('is-active', panel.getAttribute('data-cat-panel') === catId);
+        });
+    }
+
+    if (navToggle && navContent) {
+        navToggle.addEventListener('click', function () {
+            var isOpen = !navContent.classList.contains('is-open');
+            setNavOpen(isOpen);
+        });
+    }
+
+    var mqListener = function (event) {
+        if (!navContent) {
+            return;
+        }
+        if (event.matches) {
+            setNavOpen(false);
+        } else {
+            setNavOpen(true);
+        }
+    };
+
+    mqListener(mq);
+
+    if (mq.addEventListener) {
+        mq.addEventListener('change', mqListener);
+    } else if (mq.addListener) {
+        mq.addListener(mqListener);
+    }
+
+    if (allToggle) {
+        allToggle.addEventListener('click', function () {
+            toggleDrawer();
+        });
+    }
+
+    Array.prototype.forEach.call(primaryItems, function (item) {
+        var catId = item.getAttribute('data-cat');
+        item.addEventListener('mouseenter', function () {
+            if (mq.matches) {
+                setActiveCategory(catId);
+            }
+        });
+        item.addEventListener('focusin', function () {
+            if (mq.matches) {
+                setActiveCategory(catId);
+            }
+        });
+    });
+
+    var toggleButtons = navRoot.querySelectorAll('[data-cat-toggle]');
+    Array.prototype.forEach.call(toggleButtons, function (btn) {
+        btn.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            var catId = btn.getAttribute('data-cat-toggle');
+            setActiveCategory(catId);
+        });
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!navRoot.contains(event.target)) {
+            closeAllDrawer();
+            if (isToggleInteractive()) {
+                setNavOpen(false);
+            }
+        }
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closeAllDrawer();
+            if (isToggleInteractive()) {
+                setNavOpen(false);
+            }
+        }
+    });
+});
+</script>
+
 <main>

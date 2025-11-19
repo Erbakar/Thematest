@@ -137,6 +137,37 @@
     display: flex;
   }
 
+  /* Navbar mobil stilleri */
+  nav.navbar {
+    padding: 10px 0;
+  }
+
+  nav.navbar .navbar-toggler {
+    display: block;
+    margin-left: auto;
+  }
+
+  nav.navbar .navbar-collapse {
+    margin-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+  }
+
+  nav.navbar ul.navbar-nav li .nav-link {
+    font-size: 15px;
+  }
+
+  nav.navbar ul.navbar-nav li .dropdown-menu {
+    padding: 15px;
+    margin-top: 5px;
+  }
+
+  nav.navbar ul.navbar-nav li .dropdown-menu .col-xl-3,
+  nav.navbar ul.navbar-nav li .dropdown-menu .col-lg-3,
+  nav.navbar ul.navbar-nav li .dropdown-menu .col-md-3 {
+    margin-bottom: 20px;
+  }
+
   section.whyus .item {
     margin-bottom: 20px;
   }
@@ -199,6 +230,36 @@
   }
 }
 @media (max-width: 768px) {
+  /* Navbar küçük ekran stilleri */
+  nav.navbar .navbar-toggler {
+    padding: 6px 10px;
+  }
+
+  nav.navbar ul.navbar-nav li .nav-link {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  nav.navbar ul.navbar-nav li .nav-link span img {
+    height: 24px;
+    width: 28px;
+  }
+
+  nav.navbar ul.navbar-nav li .dropdown-menu {
+    padding: 10px;
+  }
+
+  nav.navbar ul.navbar-nav li .dropdown-menu .title {
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+  }
+
+  nav.navbar ul.navbar-nav li .dropdown-menu .linkgroup a {
+    font-size: 13px;
+    padding: 4px 0;
+  }
+
   section.profile .card .card-body ul.mylist li a img {
     display: none;
   }

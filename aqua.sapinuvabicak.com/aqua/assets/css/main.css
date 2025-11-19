@@ -22561,7 +22561,7 @@ section.slider .sliderbox .thumbslider .slick-slide {
   color: #fff;
   position: relative;
   cursor: pointer;
-  height: 100px;
+  height: 50px;
 }
 section.slider .sliderbox .thumbslider .slick-slide:before {
   border-radius: 4px;

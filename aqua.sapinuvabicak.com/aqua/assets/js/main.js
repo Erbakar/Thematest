@@ -208,4 +208,78 @@ $(document).ready(function() {
         }
     });
 
+    // Navbar "Daha Fazla" menü sistemi
+    function handleNavbarOverflow() {
+        var $navbarNav = $('#mainNavbar');
+        var $menuItems = $navbarNav.children('.menu-item');
+        var $moreBtnWrapper = $('#moreMenuBtn');
+        var $moreMenu = $('#moreMenuDropdown');
+
+        if ($(window).width() < 1200) {
+            $menuItems.show();
+            $moreBtnWrapper.hide();
+            $moreMenu.empty();
+            return;
+        }
+
+        // Tüm öğeleri görünür yap ve "Daha Fazla" menüsünü sıfırla
+        $menuItems.show();
+        $moreMenu.empty();
+        $moreBtnWrapper.hide();
+
+        var availableWidth = $navbarNav.closest('.navbar-collapse').innerWidth() || $navbarNav.parent().innerWidth() || $navbarNav.innerWidth();
+
+        $moreBtnWrapper.css({ display: 'inline-flex', visibility: 'hidden' });
+        var moreBtnWidth = $moreBtnWrapper.outerWidth(true) || 60;
+        $moreBtnWrapper.css({ display: 'none', visibility: '' });
+        var totalWidth = 0;
+        var overflowItems = [];
+
+        $menuItems.each(function () {
+            var $item = $(this);
+            var itemWidth = $item.outerWidth(true);
+
+            if (totalWidth + itemWidth > availableWidth - moreBtnWidth) {
+                overflowItems.push($item);
+            } else {
+                totalWidth += itemWidth;
+            }
+        });
+
+        if (overflowItems.length) {
+            $moreBtnWrapper.css('display', 'inline-flex');
+
+            overflowItems.forEach(function ($item) {
+                var $link = $item.find('> a.nav-link').first();
+                var href = $link.attr('href') || '#';
+                var text = $link.clone().children().remove().end().text().trim();
+                var $icon = $link.find('img').first();
+
+                var $moreItem = $('<a/>', {
+                    'class': 'more-menu-item',
+                    'href': href
+                });
+
+                if ($icon.length) {
+                    $('<img/>', {
+                        src: $icon.attr('src'),
+                        alt: text
+                    }).appendTo($moreItem);
+                }
+
+                $moreItem.append(document.createTextNode(text));
+                $moreMenu.append($moreItem);
+
+                $item.hide();
+            });
+        }
+    }
+
+    // Sayfa yüklendiğinde ve boyut değiştiğinde çalıştır
+    handleNavbarOverflow();
+
+    $(window).on('resize', function () {
+        handleNavbarOverflow();
+    });
+
 });
