@@ -3,6 +3,7 @@
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   overflow-scrolling: touch;
+  text-align: center;
 }
 .stories.carousel::-webkit-scrollbar {
   width: 0px;

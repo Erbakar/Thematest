@@ -1,0 +1,14 @@
+RewriteEngine on
+RewriteRule ^index(\.html)$ index.html [L,QSA]
+RewriteRule ^index(\.php)$ index.html [L,QSA]
+
+# Sadece temaayarlari.php dosyasına erişimi engelle
+<files temaayarlari.php>
+order deny,allow
+deny from all
+</files>
+
+<files captcha.php>
+order allow,deny
+allow from all
+</files>

@@ -462,6 +462,14 @@ body.trendy-nav-open {
     padding: 8px 14px;
   }
 }
+
+.stories.carousel {
+  text-align: center;
+  white-space: nowrap;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
 </style>
 </head>
 

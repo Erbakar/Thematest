@@ -67,6 +67,7 @@ header("Location: ".$url."");
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   box-shadow: none !important;
+  text-align: center;
 }
 
 .stories.snapgram .story > .item-link > .item-preview {
